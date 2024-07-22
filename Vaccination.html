@@ -23,6 +23,55 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .form-group {
+      margin-bottom: 1em;
+      margin-left: 0px;
+    }
+
+    .radio-group {
+      display: flex;
+      align-items: left;
+    }
+
+    .radio-group input {
+      margin-left: 0px;
+      margin-right: 2px;
+    }
+
+    .radio-group label {
+      margin-left: 0px;
+      margin-right: 10px; /* Adjusted margin */
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.5em;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .select-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .select-wrapper::after {
+      content: '▼';
+      position: absolute;
+      top: 50%;
+      right: 1em;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -32,8 +81,10 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
+            <img src="images/mandalogo.png" alt="">
+            
           </a>
+          <h1>Manadaluyong Dog Clinic with Crematorium</h1>
           <div class="" id="">
             <div class="User_option">
               <form class="form-inline my-2  mb-3 mb-lg-0">
@@ -85,10 +136,7 @@
         </p>
         <div class="btn-box">
           <a href="">
-            <span>
-              Read More
-            </span>
-            <img src="images/link-arrow.png" alt="">
+            
           </a>
         </div>
       </div>
@@ -96,13 +144,11 @@
   </section>
 
   <!-- end about section -->
-
- 
-  <section class="contact_section layout_padding-top">
+  <section class="contact_section">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-5 offset-md-1">
-          <div class="form_container">
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="form_container text-center">
             <div class="heading_container">
               <img src="images/heading-img.png" alt="">
               <h2>
@@ -113,34 +159,85 @@
               </p>
             </div>
             <form action="">
-              <div>
-                <input type="text" placeholder="Full Name " />
+              <div class="form-group">
+                <input type="date" placeholder="Date" />
               </div>
-              <div>
-                <input type="text" placeholder="Phone number" />
+              <div class="form-group">
+                <input type="text" placeholder="Owner Name" />
               </div>
-              <div>
-                <input type="email" placeholder="Email" />
+              <div class="form-group">
+                <input type="text" placeholder="Address" />
               </div>
-              <div>
+              <div class="form-group">
+                <input type="text" placeholder="Barangay" />
+              </div>
+              <br>
+              <br>
+              <div class="form-group">
+                <input type="text" placeholder="Pet name" />
+                
+              </div>
+              <div class="form-group radio-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+              </div>
+              <div class="form-group">
+                <input type="number" placeholder="Age" />
+              </div>
+              <div class="form-group">
+                <label for="animal">What animal?</label>
+                <div class="select-wrapper">
+                  <select id="animal" name="animal">
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Breed" />
+              </div>
+              <div class="form-group">
                 <input type="text" class="message-box" placeholder="Message" />
               </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
-                </button>
+              <div class="d-flex justify-content-center">
+                <button>SEND</button> 
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6 px-0">
-          <div class="map_container">
             
           </div>
         </div>
       </div>
     </div>
   </section>
+  
+  <style>
+    .contact_section {
+      padding-top: 0; /* Remove top padding */
+    }
+    .contact_section .form_container {
+      display: Auto;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact_section .heading_container {
+      text-align: center;
+    }
+    .contact_section .form_container form > div {
+      width: 100%;
+    }
+    .contact_section .form_container form input,
+    .contact_section .form_container form button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .contact_section .form_container form button {
+      margin-bottom: 60px; /* Add bottom margin to create space */
+    }
+  </style>
+  
+  
 
 
   <!-- info section -->
