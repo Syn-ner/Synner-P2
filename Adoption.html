@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>MDCC Adoption</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .form-group {
+      margin-bottom: 1em;
+      margin-left: 0px;
+    }
+
+    .radio-group {
+      display: flex;
+      align-items: left;
+    }
+
+    .radio-group input {
+      margin-left: 0px;
+      margin-right: 2px;
+    }
+
+    .radio-group label {
+      margin-left: 0px;
+      margin-right: 10px; /* Adjusted margin */
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 1px solid #c9b5b5;
+      border-radius: 4px;
+      padding: 0.5em;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .select-wrapper {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .select-wrapper::after {
+      content: '▼';
+      position: absolute;
+      top: 50%;
+      right: 1em;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .box{
+        width: 23%;
+        float: left;
+        margin: 1%;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0,0,0,0,0.15);
+    }
+    .box h4{
+        margin-bottom: 10px;
+    }
+    .box p{
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .box a{
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        margin-top: 15px;
+        background-color: blue; /* Set the background color to blue */
+    }
+    .box a:hover{
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    .box.showContent p{
+        height: auto;
+    }
+    .box.showContent a.readmore-btn{
+        background-color: red;
+    }
+
+  .contact_section {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+  .contact_section .form_container {
+    display: Auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_section .heading_container {
+    text-align: center;
+  }
+  .contact_section .form_container form > div {
+    width: 100%;
+  }
+  .contact_section .form_container form input,
+  .contact_section .form_container form button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contact_section .form_container form button {
+    margin-bottom: 60px; /* Add bottom margin to create space */
+  }
+
+
+
+  .contact_section.show {
+  opacity: 1;
+  visibility: visible;
+}
+  
+  </style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area ">
+    
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/mandalogo.png" alt="">
+          </a>
+          <h1>Manadaluyong Dog Clinic with Crematorium</h1>
+          <div class="" id="">
+            <div class="User_option">
+              <form class="form-inline my-2  mb-3 mb-lg-0">
+                <input type="search" placeholder="Search">
+                <button class="btn   my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+                </span>
+                <span class="s-2">
+                </span>
+                <span class="s-3">
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+    <!-- end header section -->
+  
+
+  <!-- pet section -->
+  <section class="pet_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/Stray.gif" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <img src="images/heading-img.png" alt="">
+              <h2>
+                Dog Adoption!
+              </h2>
+            </div>
+            <p>
+                Adopting a pet is a rewarding experience that brings joy to both the animals and their new families. Here at <b>MDCC (Mandaluyong Dog Clinic with Crematorium)</b>, we believe that every animal deserves a loving home. Our adoption program is dedicated to matching you with the perfect companion, whether it's a playful puppy, a cuddly kitten, or a loyal adult pet.
+                <br>
+                <br>
+                By adopting from us, you are giving a second chance to a wonderful animal in need. Our team ensures that all our adoptable pets are healthy, vaccinated, and ready to join your family. We provide ongoing support and resources to help you and your new pet adjust and thrive together.
+                <br>
+                <br>
+                Explore our adoption listings to find your new best friend today!
+            </p>
+            <div class="btn-box">
+              <a href="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end pet section -->
+
+  <!-- Adopt! section -->
+  <section class="readmore_section">
+    <div class="container">
+      <div class="row">
+        <div class="box">
+          <img src="images/.png" alt="">
+          <h4>Title 1</h4>
+          <p>Kardel ako nga pala si Kardel dota 1 at naniniwala ako sa kasabihan na ang mga taong gumagamit ng basic na hero </p>
+          <a href="javascript:void(0);" class="readmore-btn">Adopt!</a>
+        </div>
+        <div class="box">
+          <img src="images/.png" alt="">
+          <h4>Title 1</h4>
+          <p>Kardel ako nga pala si Kardel dota 1 at naniniwala ako sa kasabihan na ang mga taong gumagamit ng basic na hero </p>
+          <a href="javascript:void(0);" class="readmore-btn">Adopt!</a>
+        </div>
+        <div class="box">
+          <img src="images/.png" alt="">
+          <h4>Title 1</h4>
+          <p>Kardel ako nga pala si Kardel dota 1 at naniniwala ako sa kasabihan na ang mga taong gumagamit ng basic na hero </p>
+          <a href="javascript:void(0);" class="readmore-btn">Adopt!</a>
+        </div>
+        <div class="box">
+          <img src="images/.png" alt="">
+          <h4>Title 1</h4>
+          <p>Kardel ako nga pala si Kardel dota 1 at naniniwala ako sa kasabihan na ang mga taong gumagamit ng basic na hero </p>
+          <a href="javascript:void(0);" class="readmore-btn">Adopt!</a>
+        </div>
+        <div class="box">
+          <img src="images/.png" alt="">
+          <h4>Title 1</h4>
+          <p>Kardel ako nga pala si Kardel dota 1 at naniniwala ako sa kasabihan na ang mga taong gumagamit ng basic na hero </p>
+          <a href="javascript:void(0);" class="readmore-btn">Adopt!</a>
+        </div>
+        <div class="box">
+          <img src="images/.png" alt="">
+          <h4>Title 1</h4>
+          <p>Kardel ako nga pala si Kardel dota 1 at naniniwala ako sa kasabihan na ang mga taong gumagamit ng basic na hero </p>
+          <a href="javascript:void(0);" class="readmore-btn">Adopt!</a>
+        </div>
+        <div class="box">
+          <img src="images/.png" alt="">
+          <h4>Title 1</h4>
+          <p>Kardel ako nga pala si Kardel dota 1 at naniniwala ako sa kasabihan na ang mga taong gumagamit ng basic na hero </p>
+          <a href="javascript:void(0);" class="readmore-btn">Adopt!</a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+  <section id="contact_section" class="contact_section">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="form_container text-center">
+            <div class="heading_container">
+              <img src="images/heading-img.png" alt="">
+              <h2>Adoption Form</h2>
+              <p>Fill up this form for adoption</p>
+            </div>
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Full Name" />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Phone number" />
+                  </div>
+                  <div class="form-group">
+                    <input type="email" placeholder="Email" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Address" />
+                  </div>
+                  <div class="form-group radio-group">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="animal">Breed</label>
+                    <div class="select-wrapper">
+                      <select id="animal" name="animal">
+                        <option value="dog">Aspin</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Vax Status" />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="NS Status" />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="info_contact">
+            <h5>
+              CONTACT INFO
+            </h5>
+            <div>
+              <img src="images/call.png" alt="" />
+              <p>
+                +01 1234567890
+              </p>
+            </div>
+            <div>
+              <img src="images/mail.png" alt="" />
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_time">
+            <h5>
+              Opening Hours Shop
+            </h5>
+            <div>
+              <p>
+                Monday to friday
+              </p>
+            </div>
+            <div>
+              <p>
+                07:00 am to 04:00 pm
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="info_social">
+            <h5>
+              social media
+            </h5>
+            <div class="social_container">
+              <div>
+                <a href="">
+                  <img src="images/fb.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/twitter.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/linkedin.png" alt="" />
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <img src="images/instagram.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="info_form pl-lg-4">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="">
+              <input type="text" placeholder="Enter Your Email" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    
+  </section>
+  <!-- end  footer section -->
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    
+  </section>
+  <!-- end  footer section -->
+
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+
+<script>
+  function toggleContactSection(event) {
+    event.preventDefault();
+
+    // Select the button and the section
+    const button = event.target;
+    const section = document.getElementById("contact_section");
+
+    // Toggle visibility of the contact section
+    if (section.classList.contains('show')) {
+      section.classList.remove('show');
+      button.textContent = 'Adopt!';
+      button.style.backgroundColor = 'blue'; // Restore original color
+    } else {
+      section.classList.add('show');
+      button.textContent = 'Back';
+      button.style.backgroundColor = 'red'; // Change to red
+      
+      // Smooth scroll to the contact section
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  // Attach the function to all "Adopt!" buttons
+  document.querySelectorAll('.readmore-btn').forEach(button => {
+    button.addEventListener('click', toggleContactSection);
+  });
+</script>
+
+</body>
+
+</html>
